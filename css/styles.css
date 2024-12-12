@@ -1,0 +1,144 @@
+body {
+  background-color: #252C37;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.container {
+  color: #FFFFFF;
+  filter: drop-shadow(0px 2px 4px #000000);
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: clamp(4rem, 8vw, 6rem);
+  margin-bottom: 1rem;
+}
+
+p { 
+  font-weight: 500;
+  font-size: clamp(1rem, 3.5vw, 1.5rem); 
+  margin-bottom: 2rem; 
+}
+
+button {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  background-color: #EF326F;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+button:hover {
+  background-color: #ef326ee9;
+  font-size: clamp(1.05rem, 4vw, 1.25rem);
+}
+
+img {
+  width: 80%;
+  height: auto;
+  max-width: 30rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+/* styles.css  -  Adicionando estilos para a página de criar conta*/
+
+
+/* Estilos gerais herdados do arquivo original, como body, h1, p, etc.*/
+
+.criar-conta { /* Estilizando o container específico da página de criar conta */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente*/
+  min-height: 100vh; /* Garante que ocupe a altura total da viewport */
+}
+
+
+
+.criar-conta input[type="email"], 
+.criar-conta input[type="password"] {
+width: 100%;
+max-width: 20rem;
+padding: 0.8rem 1rem; /* Adicionado padding interno */
+margin-bottom: 1rem;
+border-radius: 5px;
+border: 1px solid #ddd;
+box-sizing: border-box; /* Para incluir padding e border no tamanho total*/
+}
+
+.criar-conta button[type="submit"] {
+width: 100%;
+max-width: 20rem;
+padding: 0.8rem 1.5rem;
+border-radius: 5px;
+border: none;
+background-color: #EF326F;
+color: #FFFFFF;
+cursor: pointer;
+transition: background-color 0.3s ease; /* Transição mais suave */
+}
+
+.criar-conta button[type="submit"]:hover {
+background-color: #c7285b;
+}
+
+.divisor {
+display: flex;
+align-items: center;
+margin: 2rem 0; /* Espaçamento acima e abaixo do divisor*/
+color: #ddd;
+}
+
+.divisor hr {
+flex-grow: 1; /* Faz as linhas ocuparem o espaço disponível */
+border: none;
+border-top: 1px solid #ddd;
+margin: 0 1rem; /* Espaçamento entre a linha e o texto*/
+}
+
+
+.social-login {
+  display: flex;
+  gap: 1rem; /* Espaço entre os botões */
+  margin-top: 1rem;
+}
+
+.social-login button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
+.facebook-login {
+  background-color: #3b5998;
+  color: white;
+}
+
+
+.google-login {
+  background-color: #db4437;
+  color: white;
+}
